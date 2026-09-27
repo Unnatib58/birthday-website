@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Surprise</title>
+    <p>The Special Day has Finally Arrived!</p>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
+
+    <main class="welcome">
+
+        <h1>✨!!Happy Birthday to you Adiraj!!✨</h1>
+        <h1>🎊🎂🎊</h1>
+
+        <p></p>
+
+       <button onclick="showSurprise()">Click for a surprise ✨</button>
+
+<section id="surprise">
+    <h2>A little message for you 💌</h2>
+
+    <p>
+        You are one of the most special people in my life,
+        and I hope your birthday is as wonderful as you are.
+        May your day be filled with lots of joy, love and happiness.
+        Wishing you lots of success and wonderful achievements 
+       in everything you do ahead!💜
+    </p>
+
+    <p>
+        This little website is just a tiny reminder
+        of how much our friendship means to me. ✨
+    </p>
+
+  <section class="little-things">
+    <h2>Little Things I Love About You 🌷</h2>
+    <p>Just a few things that make you, you. 💜</p>
+
+    <div class="things-grid">
+
+        <div class="thing-card">
+            <h3>Your jokes 😂</h3>
+
+        </div>
+
+        <div class="thing-card">
+            <h3>Your personality🤩</h3>
+        </div>
+
+        <div class="thing-card">
+            <h3>The little moments ✨</h3>
+        </div>
+
+        <div class="thing-card">
+            <h3>Everything about you🌻</h3>
+        </div>
+
+    </div>
+  </section>
+   </section>
+  <script src="script.js"></script>
+
+      <section class="manual-questions">
+    <h2>A Few Questions For You 💌</h2>
+    <p>Before the quiz... I want to know what you think. 👀</p>
+
+    <div class="question-box">
+        <label>1.Your fav game</label>
+        <textarea placeholder="Type your answer here..."></textarea>
+    </div>
+
+    <div class="question-box">
+        <label>2. What gift do u really want for your birthday?</label>
+        <textarea placeholder="Anything"></textarea>
+    </div>
+
+    <div class="question-box">
+        <label>3. What is one thing you think we'll still laugh about years from now? </label>
+        <textarea placeholder="Your answer..."></textarea>
+    </div>
+
+    <div class="question-box">
+        <label>4. Describe our friendship in three words.</label>
+        <textarea placeholder="Three words..."></textarea>
+    </div>
+
+    <div class="question-box">
+        <label>5.Where do u want to visit togather? </label>
+        <textarea placeholder="Tell me 👀"></textarea>
+    </div>
+</section>
+      <section class="friendship-quiz">
+    <h2>How Well Do You Know Us? 💜</h2>
+    <p>A tiny friendship quiz... let's see how well you remember us 👀</p>
+
+    <div class="quiz-question">
+        <h3>Question 1 💭</h3>
+        <p>What is our fav colour?</p>
+
+        <button onclick="quizAnswer(false)">A.Blue</button>
+        <button onclick="quizAnswer(false)">B.BLack</button>
+        <button onclick="quizAnswer(true)">C.B or D</button>
+        <button onclick="quizAnswer(false)">D.Purple</button>
+
+        <h3>Question 2 💭</h3>
+        <p>What do we do best together?</p>
+
+        <button onclick="quizAnswer(false)">A. Stay serious</button>
+        <button onclick="quizAnswer(false)">B. Cause chaos 😂</button>
+        <button onclick="quizAnswer(false)">C. Never laugh</button>
+        <button onclick="quizAnswer(false)">D. Be productive</button>
+         <button onclick="quizAnswer(true)">E.All of the above hehe</button>
+
+    </div>
+
+    <div id="quiz-result"></div>
+</section>
+  <section class="final-surprise">
+    <h2>Wait... one last thing 👀</h2>
+    <p>You really thought that was everything?</p>
+
+    <button onclick="showFinalSurprise()">🎁 Open your final surprise</button>
+
+    <div id="final-message">
+        <h3>For you💜</h3>
+
+        <video controls width="500">
+            <source src="final-surprise.mp4" type="video/mp4">
+        </video>
+    </div>
+  </section>
+      <footer>
+    <p> just for you</p>
+    <p class="footer-small">Happy Birthday! 🎂✨</p>
+</footer>
+  <script src="script.js"></script>
+    </main>
+
+
+</body>
+</html>

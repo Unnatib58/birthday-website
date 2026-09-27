@@ -1,0 +1,17 @@
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+function showFinalSurprise() {
+    document.getElementById("final-message").style.display = "block";
+}
+function quizAnswer(correct) {
+    const result = document.getElementById("quiz-result");
+
+    if (correct) {
+        result.innerHTML = "CORRECT 😂💜 You know us too well!";
+        result.style.color = "#e9a9ff";
+    } else {
+        result.innerHTML = "WRONG 😭 Try again!";
+        result.style.color = "#ead7ff";
+    }
+}

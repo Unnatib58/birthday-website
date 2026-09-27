@@ -1,0 +1,402 @@
+body {
+  background: #000000;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 70px 25px;
+  color: #ead7ff;
+  margin: 0;
+}
+
+/* Birthday heading */
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.2;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  color: #e9a9ff;
+  font-weight: 400;
+}
+
+/* Small message */
+p {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.6;
+  color: #ead7ff;
+  margin: 20px auto;
+}
+
+/* Surprise button */
+button {
+  background: #e9a9ff;
+  color: #17001f;
+  border: none;
+  padding: 17px 32px;
+  border-radius: 40px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #f0bfff;
+}
+}
+.welcome {
+  position: relative;
+  z-index: 2;
+}
+
+.hearts span {
+  position: fixed;
+  color: #e9a9ff;
+  font-size: 28px;
+  opacity: 0.5;
+  animation: float 6s infinite ease-in-out;
+}
+
+.hearts span:nth-child(1) {
+  left: 10%;
+  top: 20%;
+}
+
+.hearts span:nth-child(2) {
+  left: 25%;
+  top: 70%;
+}
+
+.hearts span:nth-child(3) {
+  left: 40%;
+  top: 15%;
+}
+
+.hearts span:nth-child(4) {
+  left: 60%;
+  top: 75%;
+}
+
+.hearts span:nth-child(5) {
+  left: 75%;
+  top: 25%;
+}
+
+.hearts span:nth-child(6) {
+  left: 88%;
+  top: 65%;
+}
+
+.hearts span:nth-child(7) {
+  left: 50%;
+  top: 45%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+}
+#surprise {
+  display: none;
+  max-width: 700px;
+  margin: 100px auto 50px auto;
+  padding: 40px 30px;
+  border: 1px solid #e9a9ff;
+  border-radius: 25px;
+  background: #0d0012;
+  box-shadow: 0 0 30px rgba(233, 169, 255, 0.15);
+}
+
+#surprise h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 38px;
+  color: #e9a9ff;
+  margin-bottom: 25px;
+}
+
+#surprise p {
+  color: #ead7ff;
+  font-size: 19px;
+  line-height: 1.8;
+}
+.memories {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 20px;
+}
+
+.memories h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: #e9a9ff;
+}
+
+.memories > p {
+  color: #ead7ff;
+}
+
+
+memory-card {
+  background: #0d0012;
+  border: 1px solid #e9a9ff;
+  border-radius: 20px;
+  padding: 15px;
+}
+.welcome {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  ), url("background.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  padding: 120px 30px;
+  border-radius: 25px;
+}
+
+.little-things {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 20px;
+}
+
+.little-things h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: #e9a9ff;
+}
+
+.little-things > p {
+  color: #ead7ff;
+}
+
+.things-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.thing-card {
+  background: #0d0012;
+  border: 1px solid #e9a9ff;
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+.thing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(233, 169, 255, 0.2);
+}
+
+.thing-card h3 {
+  color: #e9a9ff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.thing-card p {
+  color: #ead7ff;
+  font-size: 18px;
+  margin: 0;
+}
+.final-surprise {
+  max-width: 800px;
+  margin: 150px auto 100px;
+  padding: 50px 25px;
+  border: 1px solid #e9a9ff;
+  border-radius: 30px;
+  background: #0d0012;
+  box-shadow: 0 0 35px rgba(233, 169, 255, 0.15);
+}
+
+.final-surprise h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 44px;
+  color: #e9a9ff;
+}
+
+.final-surprise h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  color: #e9a9ff;
+}
+
+#final-message {
+  display: none;
+  margin-top: 40px;
+}
+
+#final-message video {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 1px solid #e9a9ff;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 50px 15px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .photo-grid,
+  .things-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .memories h2,
+  .little-things h2,
+  .final-surprise h2 {
+    font-size: 34px;
+  }
+
+  .final-surprise {
+    padding: 35px 18px;
+    margin-top: 100px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  box-shadow: 0 0 15px rgba(233, 169, 255, 0.2);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.memory-card,
+.thing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.manual-questions {
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+}
+
+.manual-questions h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: #e9a9ff;
+}
+
+.manual-questions > p {
+  color: #ead7ff;
+}
+
+.question-box {
+  background: #0d0012;
+  border: 1px solid #e9a9ff;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.question-box label {
+  display: block;
+  color: #e9a9ff;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.question-box textarea {
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #17001f;
+  border: 1px solid #6f4a7a;
+  border-radius: 12px;
+  padding: 15px;
+  color: #ead7ff;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  outline: none;
+}
+
+.question-box textarea:focus {
+  border-color: #e9a9ff;
+  box-shadow: 0 0 15px rgba(233, 169, 255, 0.15);
+}
+
+.question-box textarea::placeholder {
+  color: #9b7da8;
+}
+.friendship-quiz {
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 50px 25px;
+  border: 1px solid #e9a9ff;
+  border-radius: 30px;
+  background: #0d0012;
+  box-shadow: 0 0 35px rgba(233, 169, 255, 0.15);
+}
+
+.friendship-quiz h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  color: #e9a9ff;
+}
+
+.quiz-question {
+  margin-top: 40px;
+}
+
+.quiz-question h3 {
+  color: #e9a9ff;
+  font-size: 24px;
+}
+
+.quiz-question button {
+  display: block;
+  margin: 15px auto;
+  width: min(500px, 100%);
+}
+
+#quiz-result {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+footer {
+  margin-top: 120px;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(233, 169, 255, 0.25);
+}
+
+footer p {
+  color: #e9a9ff;
+  font-size: 20px;
+  margin: 5px;
+}
+
+footer .footer-small {
+  color: #9b7da8;
+  font-size: 16px;
+}
